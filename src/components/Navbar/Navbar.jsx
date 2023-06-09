@@ -1,6 +1,7 @@
 import './navbar.css';
 import { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { AiFillCloseCircle } from 'react-icons/ai';
+import { BsFilterSquareFill } from 'react-icons/bs';
 import logo from '../../assets/logo.svg';
 
 const Menu = () => {
@@ -44,13 +45,13 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
-          <RiCloseLine
+          <AiFillCloseCircle
             color="#fff"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
-          <RiMenu3Line
+          <BsFilterSquareFill
             color="#fff"
             size={27}
             onClick={() => setToggleMenu(true)}
