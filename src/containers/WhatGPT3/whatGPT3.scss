@@ -5,6 +5,8 @@
   padding: 2rem;
   background: var(--color-footer);
 
+  // gradient start
+
   /* ff 3.6+ */
   background: -moz-radial-gradient(
     circle at 30% -100%,
@@ -46,48 +48,43 @@
   );
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-.gpt3__whatgpt3-feature {
-  display: flex;
-}
+  // gradient finished
 
-.gpt3__whatgpt3-feature .gpt3__features-container-feature {
-  margin: 0;
-}
+  &-feature {
+    display: flex;
+  }
 
-.gpt3__whatgpt3-feature .gpt3__features-container-feature-text {
-  max-width: 700px;
-}
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
 
-.gpt3__whatgpt3-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4rem 0 2rem;
-}
+    & h1 {
+      font-family: var(--font-family);
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 45px;
+      max-width: 470px;
+    }
 
-.gpt3__whatgpt3-heading h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 45px;
-  max-width: 470px;
-}
+    & p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--color-subtext);
+      cursor: pointer;
+    }
+  }
 
-.gpt3__whatgpt3-heading p {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--color-subtext);
-  cursor: pointer;
-}
-
-.gpt3__whatgpt3-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+  }
 }
 
 .gpt3__whatgpt3-container .gpt3__features-container__feature {
@@ -98,7 +95,7 @@
   flex-direction: column;
 }
 
-.gpt3__whatgpt3-container .gpt3__features-container_feature-text {
+.gpt3__whatgpt3-container .gpt3__features-container__feature-text {
   margin-top: 0.5rem;
 }
 
@@ -107,10 +104,10 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0rem;
-  }
 
-  .gpt3__whatgpt3-heading p {
-    margin-top: 1rem;
+    & p {
+      margin-top: 1rem;
+    }
   }
 }
 

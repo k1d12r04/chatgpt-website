@@ -1,4 +1,4 @@
-import './navbar.css';
+import './navbar.scss';
 import { useState } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { BsFilterSquareFill } from 'react-icons/bs';

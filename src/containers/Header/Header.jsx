@@ -1,4 +1,4 @@
-import './header.css';
+import './header.scss';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
 
