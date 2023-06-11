@@ -1,5 +1,5 @@
 import './possibility.scss';
-import possibilityImage from '../../assets/possibility.png';
+import possibilityImage from '../../assets/possibility.webp';
 
 const Possibility = () => {
   return (

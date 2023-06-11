@@ -47,7 +47,7 @@
       & p {
         font-family: var(--font-family);
         font-size: 12px;
-        line-height: 14px;
+        line-height: 20px;
         color: #ffffff;
       }
     }
@@ -119,10 +119,6 @@
 
     &_logo {
       margin-bottom: 4rem;
-
-      & p {
-        line-height: 18px;
-      }
     }
   }
 }
