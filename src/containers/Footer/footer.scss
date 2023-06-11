@@ -107,3 +107,17 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .gpt3__footer-links {
+    grid-template-columns: 1fr;
+
+    &_logo {
+      margin-bottom: 4rem;
+
+      & p {
+        line-height: 18px;
+      }
+    }
+  }
+}
