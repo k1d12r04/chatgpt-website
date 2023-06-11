@@ -35,6 +35,7 @@
     display: grid;
     grid-template-columns: 40% repeat(3, 1fr);
     column-gap: 4rem;
+    width: 100%;
 
     &_logo {
       max-width: 24ch;
