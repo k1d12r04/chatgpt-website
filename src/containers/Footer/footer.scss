@@ -92,6 +92,10 @@
   .gpt3__footer {
     &-links {
       grid-template-columns: repeat(2, 1fr);
+
+      &_logo img {
+        width: 95px;
+      }
     }
 
     &-heading {
