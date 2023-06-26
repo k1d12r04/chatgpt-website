@@ -53,8 +53,8 @@ const App = () => {
         </linearGradient>
       </svg>
       <div className="gradient__bg">
-        <Navbar animation="fade-down" />
-        <Header animation="fade-right" />
+        <Navbar />
+        <Header />
       </div>
       <Brand animation="fade-up" />
       <WhatGPT3 animation="fade-right" />
