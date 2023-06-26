@@ -11,6 +11,8 @@ import { Cta, Brand, Navbar } from './components';
 import './App.css';
 import { FiArrowUpCircle } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -18,6 +20,10 @@ const App = () => {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    Aos.init({ duration: 1400, easing: 'ease-in-out' });
+  }, []);
 
   useEffect(() => {
     const handleScrollButtonVisibility = () => {
@@ -47,16 +53,16 @@ const App = () => {
         </linearGradient>
       </svg>
       <div className="gradient__bg">
-        <Navbar />
-        <Header />
+        <Navbar animation="fade-down" />
+        <Header animation="fade-right" />
       </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <Cta />
-      <Blog />
-      <Footer />
+      <Brand animation="fade-up" />
+      <WhatGPT3 animation="fade-right" />
+      <Features animation="fade-up" />
+      <Possibility animation="fade-down" />
+      <Cta animation="fade-up" />
+      <Blog animationTitle="fade-down" animationCard="flip-down" />
+      <Footer animation="zoom-in" />
       {showScrollButton && (
         <FiArrowUpCircle
           className="scroll--arrow-up"

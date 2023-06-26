@@ -1,9 +1,13 @@
 import { Feature } from '../../components';
 import './whatGPT3.scss';
 
-const WhatGPT3 = () => {
+const WhatGPT3 = ({ animation }) => {
   return (
-    <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
+    <div
+      className="gpt3__whatgpt3 section__margin"
+      id="wgpt3"
+      data-aos={animation}
+    >
       <div className="gpt3__whatgpt3-feature">
         <Feature
           title="What is GPT-3"

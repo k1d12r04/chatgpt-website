@@ -1,9 +1,9 @@
 import './footer.scss';
 import gpt3Logo from '../../assets/logo.svg';
 
-const Footer = () => {
+const Footer = ({ animation }) => {
   return (
-    <div className="gpt3__footer section__padding">
+    <div className="gpt3__footer section__padding" data-aos={animation}>
       <div className="gpt3__footer-heading">
         <h1 className="gradient__text">
           Do you want to step in to the future before others

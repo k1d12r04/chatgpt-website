@@ -2,9 +2,13 @@ import './header.scss';
 import people from '../../assets/people.webp';
 import ai from '../../assets/ai.webp';
 
-const Header = () => {
+const Header = ({ animation }) => {
   return (
-    <div className="gpt3__header section__padding" id="home">
+    <div
+      className="gpt3__header section__padding"
+      id="home"
+      data-aos={animation}
+    >
       <div className="gpt3__header-content">
         <h1 className="gradient__text">
           Let’s Build Something amazing with GPT-3 OpenAI

@@ -1,9 +1,13 @@
 import './possibility.scss';
 import possibilityImage from '../../assets/possibility.webp';
 
-const Possibility = () => {
+const Possibility = ({ animation }) => {
   return (
-    <div className="gpt3__possibility section__padding" id="possibility">
+    <div
+      className="gpt3__possibility section__padding"
+      id="possibility"
+      data-aos={animation}
+    >
       <div className="gpt3__possibility-image">
         <img src={possibilityImage} alt="possibility image" />
       </div>

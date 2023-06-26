@@ -1,7 +1,7 @@
 import './features.scss';
 import { Feature } from '../../components';
 
-const Features = () => {
+const Features = ({ animation }) => {
   const featuresData = [
     {
       title: 'Improving end distrusts instantly ',
@@ -22,7 +22,11 @@ const Features = () => {
   ];
 
   return (
-    <div className="gpt3__features section__padding" id="features">
+    <div
+      className="gpt3__features section__padding"
+      id="features"
+      data-aos={animation}
+    >
       <div className="gpt3__features-heading">
         <h1 className="gradient__text">
           The Future is Now and You Just Need To Realize It. Step into Future

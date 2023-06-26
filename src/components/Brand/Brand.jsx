@@ -1,9 +1,9 @@
 import './brand.css';
 import { google, slack, atlassian, shopify, dropbox } from './imports';
 
-const Brand = () => {
+const Brand = ({ animation }) => {
   return (
-    <div className="gpt3__brand section__padding">
+    <div className="gpt3__brand section__padding" data-aos={animation}>
       <div>
         <img src={google} alt="google" />
       </div>
